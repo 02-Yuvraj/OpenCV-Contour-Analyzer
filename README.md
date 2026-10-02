@@ -2,7 +2,39 @@
 
 A web-based image contour analysis tool built with **Python, OpenCV, NumPy, and Streamlit**.
 
-The application allows users to upload an image, adjust image-processing parameters, detect contours, and analyze the detected objects through visual and numerical outputs.
+The application allows users to upload an image, adjust image-processing parameters, detect contours, and analyze the detected objects through visual and numerical outputs.# OpenCV Contour Analyzer
+
+## Live Demo
+
+[OpenCV Contour Analyzer](https://r8k82gtfq7ftqyuvchwd4z.streamlit.app/)
+
+## Features
+
+* Upload JPG, JPEG, and PNG images
+* Preview the uploaded image
+* Convert images to grayscale
+* Apply Gaussian Blur
+* Perform Canny Edge Detection
+* Apply Morphological Closing
+* Detect external contours
+* Filter contours based on:
+
+  * Minimum contour area
+  * Maximum aspect ratio
+* Draw detected contours
+* Generate bounding boxes
+* Display contour numbers and areas
+* Calculate:
+
+  * Contour area
+  * Area percentage
+  * Perimeter
+  * Bounding box
+  * Aspect ratio
+* Interactive processing controls through the Streamlit sidebar
+
+
+
 
 ## Features
 
