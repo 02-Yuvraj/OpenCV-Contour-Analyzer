@@ -1,4 +1,4 @@
-
+OpenCV Contour Analyzer
 A web-based image contour analysis tool built with **Python, OpenCV, NumPy, and Streamlit**.
 
 The application allows users to upload an image, adjust image-processing parameters, detect contours, and analyze the detected objects through visual and numerical outputs.
