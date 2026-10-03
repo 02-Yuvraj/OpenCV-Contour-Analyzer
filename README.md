@@ -1,37 +1,166 @@
-User Purchase Prediction using Logistic Regression
-Project Overview
+# OpenCV Contour Analyzer
 
-This project builds a Machine Learning model to predict whether a user will purchase a product based on their Age and Estimated Salary.
-The model is implemented using Logistic Regression, a supervised learning classification algorithm.
+A web-based image contour analysis tool built with **Python, OpenCV, NumPy, and Streamlit**.
 
-The dataset is analyzed, preprocessed, and used to train a model that predicts user purchase behavior.
+The application allows users to upload an image, adjust image-processing parameters, detect contours, and analyze the detected objects through visual and numerical outputs.# OpenCV Contour Analyzer
 
-Technologies Used
+## Live Demo
 
-Python
-NumPy
-Pandas
-Matplotlib
-Scikit-learn
+[OpenCV Contour Analyzer](https://r8k82gtfq7ftqyuvchwd4z.streamlit.app/)
+
+## Features
+
+* Upload JPG, JPEG, and PNG images
+* Preview the uploaded image
+* Convert images to grayscale
+* Apply Gaussian Blur
+* Perform Canny Edge Detection
+* Apply Morphological Closing
+* Detect external contours
+* Filter contours based on:
+
+  * Minimum contour area
+  * Maximum aspect ratio
+* Draw detected contours
+* Generate bounding boxes
+* Display contour numbers and areas
+* Calculate:
+
+  * Contour area
+  * Area percentage
+  * Perimeter
+  * Bounding box
+  * Aspect ratio
+* Interactive processing controls through the Streamlit sidebar
 
 
-Dataset
 
-The dataset used in this project is Social_Network_Ads.csv, which contains information about users such as:
-User ID
-Gender
-Age
-Estimated Salary
-Purchased (Target Variable)
 
-The goal is to predict the Purchased column.
+## Features
 
-Model Performance
-Confusion Matrix
+* Upload JPG, JPEG, and PNG images
+* Preview the uploaded image
+* Convert images to grayscale
+* Apply Gaussian Blur
+* Perform Canny Edge Detection
+* Apply Morphological Closing
+* Detect external contours
+* Filter contours based on:
 
-[[65 3]
-[8 24]]
+  * Minimum contour area
+  * Maximum aspect ratio
+* Draw detected contours
+* Generate bounding boxes
+* Display contour numbers and areas
+* Calculate:
 
-Accuracy Score: 0.89 (89%)
+  * Contour area
+  * Area percentage
+  * Perimeter
+  * Bounding box
+  * Aspect ratio
+* Interactive processing controls through the Streamlit sidebar
 
-This means the model correctly predicts 89% of the test data.
+## Processing Pipeline
+
+```text
+Image Upload
+     ↓
+Grayscale Conversion
+     ↓
+Gaussian Blur
+     ↓
+Canny Edge Detection
+     ↓
+Morphological Closing
+     ↓
+Contour Detection
+     ↓
+Contour Filtering
+     ↓
+Contour Analysis
+     ↓
+Visual + Numerical Results
+```
+
+## Technologies Used
+
+* Python
+* OpenCV
+* NumPy
+* Streamlit
+
+## Project Structure
+
+```text
+OpenCV-Contour-Analyzer/
+│
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+## Run Locally
+
+Clone the repository:
+
+```bash
+git clone https://github.com/02-Yuvraj/OpenCV-Contour-Analyzer.git
+```
+
+Navigate to the project directory:
+
+```bash
+cd OpenCV-Contour-Analyzer
+```
+
+Install the required dependencies:
+
+```bash
+pip install -r requirements.txt
+```
+
+Run the Streamlit application:
+
+```bash
+streamlit run app.py
+```
+
+The application will open in your browser.
+
+## How to Use
+
+1. Open the application.
+2. Upload an image using the **Browse** button.
+3. Adjust the processing parameters from the sidebar.
+4. View the Canny edge output.
+5. View the morphologically closed edge output.
+6. View the detected contours and bounding boxes.
+7. Review the numerical contour information.
+
+## Parameters
+
+| Parameter             | Purpose                                     |
+| --------------------- | ------------------------------------------- |
+| Gaussian Blur Kernel  | Controls image smoothing                    |
+| Canny Lower Threshold | Sets the lower edge-detection threshold     |
+| Canny Upper Threshold | Sets the upper edge-detection threshold     |
+| Morphological Kernel  | Controls morphological closing              |
+| Minimum Contour Area  | Removes contours below the selected area    |
+| Maximum Aspect Ratio  | Filters contours based on shape proportions |
+
+## Use Cases
+
+This tool can be used for experimentation and analysis in areas such as:
+
+* Computer vision
+* Image processing
+* Object boundary detection
+* Shape analysis
+* Image preprocessing
+* Contour-based segmentation
+
+## License
+
+This project is available for educational and personal use.
+
